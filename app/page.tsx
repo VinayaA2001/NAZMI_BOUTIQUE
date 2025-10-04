@@ -1,5 +1,5 @@
 // app/page.tsx
-import Hero from "@/components/blocks/Hero";
+import Hero from "@/components/blocks/slomo";
 import ProductGrid from "@/components/commerce/ProductGrid";
 
 export default function HomePage() {
