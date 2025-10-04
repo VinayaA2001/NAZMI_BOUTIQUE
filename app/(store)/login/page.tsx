@@ -38,6 +38,13 @@ export default function LoginPage() {
           Create one
         </a>
       </p>
+
+      <p className="mt-2 text-sm text-center">
+        <a href="/forgot-password" className="text-black hover:underline">
+        Forgot your password?
+        </a>
+      </p>
+
     </section>
   );
 }
