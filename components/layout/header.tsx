@@ -39,6 +39,7 @@ export default function Header() {
 
         {/* ✅ Navigation Center */}
         <nav className="hidden md:flex gap-8 text-sm font-medium">
+          <Link href="/" className="hover:text-gray-700">Home</Link> {/* 👈 Added Home */}
           <Link href="/traditional" className="hover:text-gray-700">Traditional</Link>
           <Link href="/western" className="hover:text-gray-700">Western</Link>
           <Link href="/occasions/office" className="hover:text-gray-700">Occasions</Link>

@@ -1,14 +1,13 @@
 // app/page.tsx
-import Hero from "@/components/blocks/slomo";
+import Slomo from "@/components/blocks/slomo";
 import ProductGrid from "@/components/commerce/ProductGrid";
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#fff8f3] via-[#fdece4] to-[#fff8f3] py-16 px-6 md:px-20 space-y-20 rounded-3xl shadow-inner">
 
-  
       {/* Hero Section (replaced) */}
-      <Hero />
+      <Slomo />
 
       {/* Featured Categories (unchanged) */}
       <section>
@@ -19,7 +18,7 @@ export default function HomePage() {
             className="group relative block overflow-hidden rounded-xl shadow hover:shadow-lg"
           >
             <img
-              src="/images/traditional.jpg"
+              src="/images/traditional.png"
               alt="Traditional"
               className="w-full h-60 object-cover group-hover:scale-105 transition"
             />
@@ -33,7 +32,7 @@ export default function HomePage() {
             className="group relative block overflow-hidden rounded-xl shadow hover:shadow-lg"
           >
             <img
-              src="/images/western.jpg"
+              src="/images/western.png"
               alt="Western"
               className="w-full h-60 object-cover group-hover:scale-105 transition"
             />
@@ -47,7 +46,7 @@ export default function HomePage() {
             className="group relative block overflow-hidden rounded-xl shadow hover:shadow-lg"
           >
             <img
-              src="/images/sale.jpg"
+              src="/images/sales.png"
               alt="Sale"
               className="w-full h-60 object-cover group-hover:scale-105 transition"
             />

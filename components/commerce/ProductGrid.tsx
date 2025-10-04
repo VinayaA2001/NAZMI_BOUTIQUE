@@ -13,19 +13,19 @@ const sampleProducts: Product[] = [
     id: "p1",
     name: "Traditional Saree",
     price: 1299,
-    image: "/products/saree.jpg",
+    image: "/images/tradition saree.png",
   },
   {
     id: "p2",
     name: "Western Dress",
     price: 999,
-    image: "/products/dress.jpg",
+    image: "/images/western dress.png",
   },
   {
     id: "p3",
     name: "Kurta Set",
     price: 1499,
-    image: "/products/kurta.jpg",
+    image: "/images/kurta set.png",
   },
 ];
 
