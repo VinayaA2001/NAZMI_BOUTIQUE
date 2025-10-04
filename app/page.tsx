@@ -5,7 +5,7 @@ import ProductGrid from "@/components/commerce/ProductGrid";
 export default function HomePage() {
   return (
     <main className="container mx-auto py-10 space-y-16">
-      {/* Hero Section (replaced) */}
+      {/* Hero Section(replaced) */}
       <Hero />
 
       {/* Featured Categories (unchanged) */}

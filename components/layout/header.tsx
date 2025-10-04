@@ -25,7 +25,7 @@ export default function Header() {
     <header className="border-b bg-white sticky top-0 z-50 w-full">
       <div className="w-full px-6 h-16 flex items-center justify-between">
         
-        {/* ✅ Logo on the left */}
+        {/*  Logo on the left */}
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.png"
@@ -37,7 +37,7 @@ export default function Header() {
           />
         </Link>
 
-        {/* ✅ Navigation Center */}
+        {/*  Navigation Center */}
         <nav className="hidden md:flex gap-8 text-sm font-medium">
           <Link href="/" className="hover:text-gray-700">Home</Link> {/* 👈 Added Home */}
           <Link href="/traditional" className="hover:text-gray-700">Traditional</Link>
@@ -46,7 +46,7 @@ export default function Header() {
           <Link href="/sale/under-999" className="text-red-600 hover:text-red-700">Sale</Link>
         </nav>
 
-        {/* ✅ Actions on Right */}
+        {/*  Actions on Right */}
         <div className="flex items-center gap-6 text-sm font-medium">
           {/* Search */}
           <Link href="/search" className="relative hover:text-gray-700">
