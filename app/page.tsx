@@ -1,10 +1,12 @@
 // app/page.tsx
-import Hero from "@/components/blocks/Hero";
+import Hero from "@/components/blocks/slomo";
 import ProductGrid from "@/components/commerce/ProductGrid";
 
 export default function HomePage() {
   return (
-    <main className="container mx-auto py-10 space-y-16">
+    <main className="min-h-screen bg-gradient-to-b from-[#fff8f3] via-[#fdece4] to-[#fff8f3] py-16 px-6 md:px-20 space-y-20 rounded-3xl shadow-inner">
+
+  
       {/* Hero Section (replaced) */}
       <Hero />
 
