@@ -17,7 +17,7 @@ export default function HomePage() {
             className="group relative block overflow-hidden rounded-xl shadow hover:shadow-lg"
           >
             <img
-              src="/images/traditional.jpg"
+              src="/images/traditional.png"
               alt="Traditional"
               className="w-full h-60 object-cover group-hover:scale-105 transition"
             />
@@ -31,7 +31,7 @@ export default function HomePage() {
             className="group relative block overflow-hidden rounded-xl shadow hover:shadow-lg"
           >
             <img
-              src="/images/western.jpg"
+              src="/images/western.png"
               alt="Western"
               className="w-full h-60 object-cover group-hover:scale-105 transition"
             />
@@ -45,7 +45,7 @@ export default function HomePage() {
             className="group relative block overflow-hidden rounded-xl shadow hover:shadow-lg"
           >
             <img
-              src="/images/sale.jpg"
+              src="/images/sales.png"
               alt="Sale"
               className="w-full h-60 object-cover group-hover:scale-105 transition"
             />
