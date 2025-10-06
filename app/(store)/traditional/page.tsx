@@ -1,92 +1,48 @@
-// app/kurtas/page.tsx
-"use client";
+﻿"use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-type Product = {
-  id: string;
-  name: string;
-  image: string;
-  price: number;
-  slug: string;
-};
+export default function TraditionalPage() {
+  const pathname = usePathname();
 
-const KURTAS: Product[] = [
-  {
-    id: "K001",
-    name: "Handloom Cotton Kurti",
-    image: "/images/kurtas/kurti1.jpg",
-    price: 1299,
-    slug: "handloom-cotton-kurti",
-  },
-  {
-    id: "K002",
-    name: "Printed Straight Kurta",
-    image: "/images/kurtas/kurti2.jpg",
-    price: 999,
-    slug: "printed-straight-kurta",
-  },
-  {
-    id: "K003",
-    name: "Anarkali Flared Kurti",
-    image: "/images/kurtas/kurti3.jpg",
-    price: 1899,
-    slug: "anarkali-flared-kurti",
-  },
-  {
-    id: "K004",
-    name: "Chikankari Embroidered Kurta",
-    image: "/images/kurtas/kurti4.jpg",
-    price: 2199,
-    slug: "chikankari-embroidered-kurta",
-  },
-];
+  const subPages = [
+    { name: "Ethnic Dresses", path: "/store/traditional/ethnic-dresses" },
+    { name: "Festive Edits", path: "/store/traditional/festive-edits" },
+    { name: "Kurtas & Sets", path: "/store/traditional/kurtas-and-sets" },
+  ];
 
-export default function Page() {
   return (
-    <main className="min-h-screen container py-10">
-      <h1 className="text-2xl md:text-3xl font-bold mb-6">Kurtas & Kurtis</h1>
-      <p className="text-neutral-600 mb-8">
-        Explore our collection of comfortable and elegant kurtas and kurtis — perfect for daily wear or festive occasions.
-      </p>
-
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {KURTAS.map((product, index) => {
-          const key = product.id ?? `${product.slug}-${index}`;
-          return (
-            <article
-              key={key}
-              className="group border rounded-xl overflow-hidden bg-white hover:shadow-md transition"
-            >
-              <Link href={`/product/${product.slug}`} className="block">
-                <div className="relative aspect-[3/4] overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
+    <div className="container mx-auto py-10 flex gap-6">
+      {/* Sidebar */}
+      <aside className="w-60 bg-gray-100 p-4 rounded-md">
+        <h2 className="font-semibold text-lg mb-4">Traditional Subpages</h2>
+        <ul className="flex flex-col gap-2">
+          {subPages.map((page) => (
+            <li key={page.path}>
+              <Link
+                href={page.path}
+                className={`block px-3 py-2 rounded-md ${
+                  pathname === page.path
+                    ? "bg-blue-500 text-white"
+                    : "text-gray-700 hover:bg-gray-200"
+                }`}
+              >
+                {page.name}
               </Link>
-              <div className="p-4">
-                <Link
-                  href={`/product/${product.slug}`}
-                  className="block font-medium line-clamp-1 hover:underline"
-                >
-                  {product.name}
-                </Link>
-                <p className="mt-2 font-semibold">₹{product.price}</p>
-                <button
-                  type="button"
-                  className="mt-3 text-sm px-3 py-1.5 rounded-full border border-neutral-300 hover:bg-neutral-50"
-                >
-                  ❤️ Add to Wishlist
-                </button>
-              </div>
-            </article>
-          );
-        })}
-      </div>
-    </main>
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      {/* Content */}
+      <main className="flex-1 bg-white p-6 rounded-md shadow">
+        <h1 className="text-2xl font-semibold mb-4">Coming Soon</h1>
+        <p className="text-gray-600">
+          This section is under construction. Please check back later for all
+          traditional collections.
+        </p>
+      </main>
+    </div>
   );
 }

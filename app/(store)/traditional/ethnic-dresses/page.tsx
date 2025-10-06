@@ -9,7 +9,7 @@ type Product = {
   name: string;
   image: string;
   price: number;
-  category: "Saree" | "Salwar" | "Lehenga" | "Kurti";
+  category:  "Salwar" | "Lehenga" | "Kurti";
   slug: string;
 };
 
@@ -18,7 +18,7 @@ const ALL_PRODUCTS: Product[] = [
   {
     id: "TRAD-002",
     name: "Embroidered Anarkali Suit",
-    image: "/images/traditional/salwar-1.png",
+    image: "/images/churidhar1.png",
     price: 3299,
     category: "Salwar",
     slug: "embroidered-anarkali-suit",

@@ -18,7 +18,7 @@ export default function HomePage() {
             className="group relative block overflow-hidden rounded-xl shadow hover:shadow-lg"
           >
             <img
-              src="\images\tradition saree.png"
+              src="/images/traditionsaree.png"
               alt="Traditional"
               className="w-full h-60 object-cover group-hover:scale-105 transition"
             />
@@ -32,7 +32,7 @@ export default function HomePage() {
             className="group relative block overflow-hidden rounded-xl shadow hover:shadow-lg"
           >
             <img
-              src="\images\western dress.png"
+              src="/images/western dress.png"
               alt="Western"
               className="w-full h-60 object-cover group-hover:scale-105 transition"
             />
