@@ -11,9 +11,10 @@ type Product = {
 const sampleProducts: Product[] = [
   {
     id: "p1",
-    name: "Traditional Saree",
+    name: "Traditional ",
     price: 1299,
-    image: "/images/tradition saree.png",
+    image: "/images/tradition saree.png"
+
   },
   {
     id: "p2",
@@ -23,7 +24,7 @@ const sampleProducts: Product[] = [
   },
   {
     id: "p3",
-    name: "Kurta Set",
+    name: "Ocassions",
     price: 1499,
     image: "/images/kurta set.png",
   },
